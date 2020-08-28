@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* breadcrumb */
+.icon-frame{
+    cursor: pointer;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #000;
+    display:flex;
+    flex-flow: column;
+    padding: 5px 0;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.line{
+    background-color: #000;
+    width: 60%;
+    height: 4px;
+}
+
+.line1,.line3{
+    position: relative;
+    top:0;
+    transition: all 0.5s;
+}
+
+.line1-crossed,.line3-crossed{
+    position: relative;
+    top:0;
+    transition: all 0.5s;
+}
+
+.line1-crossed{ 
+    top:25%;
+    transform: rotateZ(50deg);  
+}
+
+.line3-crossed{
+    top:-25%;
+    transform: rotateZ(-50deg);
+}
